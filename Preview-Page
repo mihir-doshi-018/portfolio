@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 40px;
+      color: #1a1a1a;
+    }
+    .blog-image {
+     width: 100%;
+     height: 420px;           /* ✅ Fixed height for neat layout */
+     object-fit: cover;       /* ✅ Crop and fill without distortion */
+     border-radius: 12px;     /* ✅ Match container rounding */
+     display: block;
+     margin-bottom: 20px;
+    }
 
+
+    .blog-preview {
+       background: #fff;
+       padding: 24px;
+       max-width: 600px;
+       margin: auto;
+       border-radius: 12px;
+       shadow: 0 4px 12px rgba(0,0,0,0.08);
+       overflow: hidden;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0f3e2e;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .read-more {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #0f766e;
+      color: white;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more:hover {
+      background-color: #115e59;
+    }
+
+    .read-more span {
+      margin-left: 6px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="blog-preview">
+    <img src="https://www.news-medical.net/image-handler/ts/20250224044405/ri/950/src/images/news/ImageForNews_803184_17404334439923343.jpg" alt="AI and Epidemics" class="blog-image">
+    <h2>Using AI to Predict and Prevent Epidemics</h2>
+    
+    <p>AI is transforming how we detect and control disease outbreaks. By analyzing real-time data—from social media, hospital records, environmental sensors, and global travel—AI tools identify emerging threats before they spread globally.</p>
+    <p>Advanced machine learning models, including LLMs and graph neural networks, can forecast infection trajectories and pinpoint hotspots. Researchers from Johns Hopkins and Duke have recently shown that an AI-powered model named PandemicLLM accurately predicts COVID‑19 case trends up to three weeks ahead.</p>
+    <p>Network scientists at Northeastern are developing context-aware AI that factors in social systems and human mobility to model future epidemics better. With increased investment in health infrastructure and global data collaboration, AI-driven tools are becoming essential for early detection and targeted response strategies.</p>
+    <a href="main blog page.html" class="read-more">Read More <span>→</span></a>
+  </div>
+</body>
+</html>
